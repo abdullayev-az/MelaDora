@@ -1,0 +1,551 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+html{
+
+    overflow-x: hidden;
+}
+body{
+    overflow-x: hidden;
+}
+.top-main{
+    width: 100%;
+    height: 70vh;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.8)) , url(image/markus-spiske-71uUjIt3cIs-unsplash.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.topbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid rgb(156, 156, 156);
+}
+.topbar span{
+    color: #fff;
+}
+.topbar .icons img{
+    margin-left: 10px;
+}
+.navbarr{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbarr .nav-texts ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-bottom: 0;
+}
+.offcanvas-texts{
+    display: none;
+}
+.navbarr .hamburger{
+    display: none;
+}
+.navbarr .nav-texts ul li a{
+    margin-left: 40px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+.card-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 180px;
+}
+.card-list .card{
+    width: 30%;
+    height: 35vh;
+    margin: 30px;
+    border: none;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    position: relative;
+    padding: 15px;
+    overflow: hidden;
+}
+.card-list .card-1{
+    background: #1A5221;
+}
+.card-list .card-2{
+    background: #91B40D;
+}
+.card-list .card-3{
+    background: #FFBF00;
+}
+.card-list .card h1 {
+    font-size: 1.6em;
+    font-family: serif;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.card-list .card h5 {
+    font-size: 1.2em;
+    font-family: serif;
+    color: #fff;
+}
+.card-list .card img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 10;
+}
+.card-list .card-1 img{
+    width: 60%;
+    right: 20px;
+    bottom: 10px;
+}
+.card-list .card-2 img{
+    width: 90%;
+}
+.card-list .card-3 img{
+    width: 100%;
+    left: 50px;
+}
+.card-list .card .card-background,
+.card-list .card .card-background-2{
+    width: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: 8;
+}
+.card-list .card .card-background-2{
+    top: auto;
+}
+.two-main{
+    display: flex;
+}
+.side-texts{
+    padding: 40px 0;
+    width: 100%;
+    text-align: center;
+}
+.side-img{
+    width: 50%;
+}
+.side-img img{
+    width: 100%;
+    height: 100%;
+}
+.side-texts .texts{
+    width: 100%;
+    height: 100%;
+    background: #fafafa;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.side-texts .texts h1{
+    font-family: serif;
+}
+.side-texts .texts .side-background{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 150px;
+    height: 100px;
+}
+.text-icons{
+    display: flex;
+    justify-content: center;
+}
+.text-icons span{
+    margin-top: 10px;
+    margin-left: 50px;
+}
+.text-icons span img{
+    margin-bottom: 20px;
+}
+.text-img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.three-main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 100px    ;
+}
+.bags{
+    display: flex;
+    width: 100%;
+    margin-top: 5rem;
+}
+.bags .bag-card{
+    width: 100%;
+    height: 50vh;
+    background: red;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 50px;
+    cursor: pointer;
+}
+.bags .bag-card h1{
+    font-size: 6em;
+    color: #fff;
+    font-family: sans-serif;
+}
+.bags .bag-card p{
+    color: #fff;
+}
+.bags .bag1{
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(image/bag1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
+}
+
+.bags .bag2{
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(image/bag2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 54vh;
+    margin-top: -4vh;
+}
+.bags .bag3{
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(image/bag3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: blur(4px);
+}
+.four-main,
+.five-main{
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+.fourty-background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100px;
+}
+.four-main .category{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.four-main .category ul{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.four-main .category ul li{
+    list-style: none;
+    margin: 15px;
+    font-family: serif;
+    cursor: pointer;
+}
+.four-main .category ul li:first-child{
+    color: #91B40D;
+}
+.products{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.products .product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    margin: 20px 30px;
+}
+.products .product .product-img{
+    width: 100px;
+    height: 100px;
+}
+.products .product .product-name{
+    width: 100%;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+.five-main{
+    top: 100px;
+}
+.five-main .blog{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+}
+.five-main .blog .blog-card{
+    text-align: start;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.five-main .blog .blog2{
+    margin-top: -5rem;
+}
+.five-main .blog .blog-card img{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.blog-card .blog-text h5{
+    font-family: serif;
+}
+.blog-card .blog-text p{
+    font-family: serif;
+    margin-top: 15px;
+    color: #7C7A7A;
+}
+.footer{
+    width: 100%;
+    background: url(image/foter.png);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    padding-top: 17rem;
+}
+.foter-logo{
+    width: 200px;
+    margin-bottom: 20px;
+}
+.foter-menyu li{
+    list-style: none;
+    margin-top: 10px;
+}
+.foter-menyu li a{
+    text-decoration: none;
+    color: #fff;
+}
+.foter-menyu li:first-child a{
+    font-weight: 600;
+}
+.copyright p{
+    color: #fff;
+    margin-bottom: 0;
+    padding: 20px 0;
+}
+
+
+
+
+
+
+
+
+@media only screen and  (max-width: 991px) {
+    .navbarr .nav-texts ul li a{
+        margin-left: 13px;
+    }
+    .card-list{
+        bottom: 130px;
+    }
+    .card-list .card{
+        margin-left: 20px;
+        height: 30vh;
+    }.side-img{
+        display: none;
+    }
+    .side-texts .texts .side-background{
+        position: absolute;
+        left: 60px;
+        top: 50%;
+        width: 150px;
+        height: 100px;
+    }
+    .bags .bag-card p{
+        font-size: 0.8em;
+    }
+    .products .product{
+        width: 80px;
+        margin: 20px 30px;
+    }
+    .copyright p{
+        color: #fff;
+        margin-bottom: 0;
+        padding: 20px 20px;
+    }
+}
+@media only screen and  (max-width: 769px){
+    .topbar{
+        display: none;
+    }
+    .navbarr{
+        padding-top: 1rem;
+        position: relative;
+    }
+    .navbarr .nav-texts{
+        display: none;
+    }
+    .navbarr .hamburger{
+        display: block;
+        cursor: pointer;
+    }
+    .navbarr .hamburger .hamburger-line{
+        width: 40px;
+        height: 3px;
+        background-color: #91B40D;
+        margin-top: 8px;
+        border-radius: 3px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+        -o-border-radius: 3px;
+    }
+    .offcanvas-texts{
+        position: absolute;
+        right: 0;
+        top: 0;
+        background: rgba(128, 128, 128, 0.24);
+        backdrop-filter: blur(10px);
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        height: 100vh;
+        z-index: 12;
+        padding: 20px;
+        transform: translateX(320px);
+        transition-delay: 0.8s;
+        -webkit-transform: translateX(320px);
+        -moz-transform: translateX(320px);
+        -ms-transform: translateX(320px);
+        -o-transform: translateX(320px);
+}
+    .offclose div{
+        width: 30px;
+        height: 2px;
+        background: #91B40D;
+        margin-bottom: 3px;
+    }
+    .offcanvas-texts ul{
+        list-style: none;
+        padding-left: 0;
+    }
+    .offcanvas-texts ul li{
+        margin-top: 10px;
+    }
+    .offcanvas-texts ul li a{
+        color: #fff;
+        text-decoration: none;
+        font-family: serif;
+        letter-spacing: 1px;
+    }
+    .offcanvas-texts ul li a:hover{
+        color: #91B40D;
+    }
+    .card-list{
+        flex-wrap: wrap;
+        bottom: 100px;
+    }
+    .card-list .card{
+        width: 100%;
+        margin: 10px auto;
+        height: 50vh;
+    }
+    .card-list .card img{
+        width: 50%;
+        right: 0;
+        bottom: 0;
+        left: auto;
+    }
+    .texts .img-text{
+        width: 100%;
+    }
+    .text-img img{
+        height: 13px;
+    }
+    .bags{
+        flex-wrap: wrap;
+    }
+    .copyright p{
+       text-align: center;
+    }
+}
+@media only screen and  (max-width: 576px){
+    .topbar .icons img{
+        margin-left: 5px;
+    }
+    .card-list{
+        bottom: 50px;
+    }
+    .card-list .card{
+        height: 35vh;
+    }
+    .card-list .card img{
+        width: 60%;
+        right: 0;
+        bottom: 0;
+        left: auto;
+    }
+    .card-list .card-3 img{
+        width: 250px;
+
+    }
+    .text-icons{
+        margin-top: 20px;
+    }
+    .text-icons span{
+        margin-left: 20px;
+    }
+    .text-icons span img{
+         width: 30px;
+    }
+    .text-icons span p{
+        font-size: 0.8em;
+    }
+    .text-img img{
+        height: 10px;
+    }
+    .side-texts .texts .side-background{
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 100px;
+        height: 50px;
+    }
+    .fourty-background{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 150px;
+        height: 50px;
+    }
+    .five-main .blog{
+        padding: 15px;
+        flex-wrap: wrap;
+    }
+    .five-main .blog .blog-card{
+        width: 100%;
+        text-align: start;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 15px;
+    }
+}
