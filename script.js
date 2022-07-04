@@ -36,6 +36,7 @@ function out3(){
 $('.hamısı').click(function(){
    $(this).css('color','#91B40D');
    $('.meyve').css('display','flex');
+   $('.meyveler').css('color','black');
    $('.terevezler').css('color','black');
    $('.taxıllar').css('color','black');
    $('.digerler').css('color','black');
