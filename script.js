@@ -70,7 +70,7 @@ $('.taxıllar').click(function(){
    $('.taxıl').css({'display':'flex'});
    $('.hamısı').css('color','black');
    $('.meyveler').css('color','black');
-   $('.terevez').css('color','black');
+   $('.terevezler').css('color','black');
    $('.digerler').css('color','black');
    $('.meyve').css({'display':'none'});
    $('.terevez').css({'display':'none'});
@@ -81,7 +81,7 @@ $('.digerler').click(function(){
    $('.diger').css({'display':'flex'});
    $('.hamısı').css('color','black');
    $('.meyveler').css('color','black');
-   $('.terevez').css('color','black');
+   $('.terevezler').css('color','black');
    $('.taxıllar').css('color','black');
    $('.meyve').css({'display':'none'});
    $('.terevez').css({'display':'none'});
